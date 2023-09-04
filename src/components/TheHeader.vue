@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-center justify-center">
-        <img class="mb-6" src="src/assets/logo.png">
+        <img class="mb-6" src="/src/assets/logo.png">
         <ul class="flex items-center gap-[29px] mb-6">
             <li class="relative before:content-[''] before:w-4 before:h-4 before:bg-[url(src/assets/arrow.png)] before:block before:bg-no-repeat before:bg-[] before:absolute before:-right-6 before:bg-center before:top-3"><router-link class="text-[#999] text-[13px] " to="/">Главная</router-link></li>
             <li class="relative before:content-[''] before:w-4 before:h-4 before:bg-[url(src/assets/arrow.png)] before:block before:bg-no-repeat before:bg-[] before:absolute before:-right-6 before:bg-center before:top-3"><router-link class="text-[#999] text-[13px]" to="/">{{ routerName }}</router-link></li>
