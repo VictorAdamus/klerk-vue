@@ -4,7 +4,7 @@
     <h2 class="text-xl leading-7 font-medium mb-2">{{ card.title }}</h2>
     <p class="text-sm text-[#666] mb-4">{{ card.description }}</p>
     <ul class="flex flex-col gap-2 mb-4">
-        <li class="leading-5 text-sm flex items-center justify-start" v-for="item in card.subtitleList" :key="item.id" ><span class="block w-4 h-4 mr-2 bg-[url('/public/img/check.png')]"></span>{{ item.title }}</li>
+        <li class="leading-5 text-sm flex items-center justify-start" v-for="item in card.subtitleList" :key="item.id" ><span class="block w-4 h-4 mr-2 bg-[url('/src/assets/check.png')]"></span>{{ item.title }}</li>
     </ul>
     <label class="flex items-center cursor-pointer mt-auto">
         <input class="hidden" :checked="isChecked" type="checkbox" @change='this.isChecked = !this.isChecked'>

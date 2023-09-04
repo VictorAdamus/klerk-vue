@@ -77,7 +77,7 @@ export default {
                     allSubscribe: this.isChecked
                 };
                 this.inputValue = ''
-                axios.post('https://jsonplaceholder.typicod.com/posts', payload)
+                axios.post('https://jsonplaceholder.typicode.com/posts', payload)
                     .then(resolve => {
                         console.log(`Succseful: `, resolve.data);
                         this.response = true

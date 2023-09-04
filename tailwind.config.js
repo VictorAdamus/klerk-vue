@@ -3,10 +3,6 @@ module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    // screens: {
-    //   'md': {'max': '780px'},
-    //   'sm': {'max': '540px'}
-    // },
     extend: {
       animation: {
         'novalide': 'novalide linear .5s'
