@@ -1,7 +1,7 @@
 <template>
     <form @submit.prevent class="flex flex-col items-start justify-center w-full mb-8 md:px-6">
         <Teleport to="body">
-            <ModalWindow v-if="isModal === 'succeful'">Великолепно!<br> Подписка успешно оформлена!</ModalWindow>
+            <ModalWindow v-if="isModal === 'succeful'" response="this.response">Великолепно!<br> Подписка успешно оформлена!</ModalWindow>
             <ModalWindow v-else-if="isModal === 'error'">Ошибка!<br> Перезагрузите страницу и попробуйте еще раз
             </ModalWindow>
         </Teleport>
@@ -50,6 +50,7 @@ export default {
             isValidBtn: false,
             novalidAnimation: false,
             isModal: null,
+            response: false
         }
     },
 
@@ -76,16 +77,18 @@ export default {
                     allSubscribe: this.isChecked
                 };
                 this.inputValue = ''
-                axios.post('https://jsonplaceholder.typicode.com/posts', payload)
+                axios.post('https://jsonplaceholder.typicod.com/posts', payload)
                     .then(resolve => {
                         console.log(`Succseful: `, resolve.data);
+                        this.response = true
                         this.isModal = 'succeful'
-                        setTimeout(() => {this.isModal = ''}, 2000)
+                        setTimeout(() => {this.isModal = ''}, 1000)
                     })
                     .catch(error => {
                         console.log(`Error: ${ error }`);
+                        this.response = true
                         this.isModal = 'error'
-                        setTimeout(() => {this.isModal = ''}, 2000)
+                        setTimeout(() => {this.isModal = ''}, 1000)
                     })
             } else {
                 this.novalidAnimation = true

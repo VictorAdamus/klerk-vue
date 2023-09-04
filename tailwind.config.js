@@ -13,12 +13,12 @@ module.exports = {
       },
       keyframes: {
         novalide: {
-          '0%': {transform: 'translateX(-20px)',},
+          '0%': {transform: 'translateX(-20px)', backgroundColor: 'brown'},
           '20%': {transform: 'translateX(20px)',},
           '40%': {transform: 'translateX(-20px)',},
           '60%': {transform: 'translateX(20px)',},
           '80%': {transform: 'translateX(-20px)',},
-          '100%': {transform: 'translateX(0)',}
+          '100%': {transform: 'translateX(0)', backgroundColor: 'rgb(59 130 246)'}
         }
       }
     },
