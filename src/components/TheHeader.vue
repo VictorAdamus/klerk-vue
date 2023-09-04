@@ -2,8 +2,8 @@
     <div class="flex flex-col items-center justify-center">
         <img class="mb-6" src="/src/assets/logo.png">
         <ul class="flex items-center gap-[29px] mb-6">
-            <li class="relative before:content-[''] before:w-4 before:h-4 before:bg-[url(src/assets/arrow.png)] before:block before:bg-no-repeat before:bg-[] before:absolute before:-right-6 before:bg-center before:top-3"><router-link class="text-[#999] text-[13px] " to="/">Главная</router-link></li>
-            <li class="relative before:content-[''] before:w-4 before:h-4 before:bg-[url(src/assets/arrow.png)] before:block before:bg-no-repeat before:bg-[] before:absolute before:-right-6 before:bg-center before:top-3"><router-link class="text-[#999] text-[13px]" to="/">{{ routerName }}</router-link></li>
+            <li class="relative before:content-[''] before:w-4 before:h-4 before:bg-[url(/src/assets/arrow.png)] before:block before:bg-no-repeat before:bg-[] before:absolute before:-right-6 before:bg-center before:top-3"><router-link class="text-[#999] text-[13px] " to="/">Главная</router-link></li>
+            <li class="relative before:content-[''] before:w-4 before:h-4 before:bg-[url(/src/assets/arrow.png)] before:block before:bg-no-repeat before:bg-[] before:absolute before:-right-6 before:bg-center before:top-3"><router-link class="text-[#999] text-[13px]" to="/">{{ routerName }}</router-link></li>
             <li><router-link class="text-[#999] text-[13px]" to="/">Крошка</router-link></li>
         </ul>
         <h1 class="text-[32px] font-medium tracking-tight mb-6 md:text-[56px]">Подписки «Клерка»</h1>
