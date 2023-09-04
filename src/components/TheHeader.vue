@@ -21,17 +21,17 @@ export default {
             {
                 title: 'Рассылки',
                 src: '/subscribe',
-                activeLink: true
+                // activeLink: true
             },
             {
                 title: 'Соцсети',
                 src: '/social',
-                activeLink: false
+                // activeLink: false
             },
             {
                 title: 'Мессенджеры',
                 src: '/messages',
-                activeLink: false
+                // activeLink: false
             },
         ],
         routerName: '',
