@@ -1,3 +1,8 @@
+import imgcard1 from '../assets/card-1.png'
+import imgcard2 from '../assets/card-2.png'
+import imgcard3 from '../assets/card-3.png'
+import imgcard4 from '../assets/card-4.png'
+
 export const cards = [
     {
         id: 1,
@@ -13,7 +18,7 @@ export const cards = [
         }],
         subscribers: 'Уже получает  человек',
         checked: true,
-        image: '/src/assets/card-1.png',
+        image: imgcard1,
     },
     {
         id: 2,
@@ -29,7 +34,7 @@ export const cards = [
         }],
         subscribers: 'Уже получает 37 480 человек',
         checked: false,
-        image: '/src/assets/card-2.png'
+        image: imgcard2
     },
     {
         id: 3,
@@ -45,7 +50,7 @@ export const cards = [
         }],
         subscribers: 'Уже получает 92 118 человек',
         checked: false,
-        image: '/src/assets/card-3.png'
+        image: imgcard3
     }, 
     {
         id: 4,
@@ -61,6 +66,6 @@ export const cards = [
         }],
         subscribers: 'Уже получает 92 082 человек',
         checked: false,
-        image: '/src/assets/card-4.png'
+        image: imgcard4
     }
 ]
