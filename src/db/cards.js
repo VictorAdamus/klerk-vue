@@ -13,7 +13,7 @@ export const cards = [
         }],
         subscribers: 'Уже получает  человек',
         checked: true,
-        image: './src/assets/card-1.png',
+        image: '../assets/card-1.png',
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ export const cards = [
         }],
         subscribers: 'Уже получает 37 480 человек',
         checked: false,
-        image: './src/assets/card-2.png'
+        image: '../assets/card-2.png'
     },
     {
         id: 3,
@@ -45,7 +45,7 @@ export const cards = [
         }],
         subscribers: 'Уже получает 92 118 человек',
         checked: false,
-        image: '/src/assets/card-3.png'
+        image: '../assets/card-3.png'
     }, 
     {
         id: 4,
@@ -61,6 +61,6 @@ export const cards = [
         }],
         subscribers: 'Уже получает 92 082 человек',
         checked: false,
-        image: '/src/assets/card-4.png'
+        image: '../assets/card-4.png'
     }
 ]
